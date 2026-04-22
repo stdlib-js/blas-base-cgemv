@@ -35,32 +35,14 @@ limitations under the License.
 
 > Perform one of the matrix-vector operations `y = α*A*x + β*y` or `y = α*A^T*x + β*y` or `y = α*A^H*x + β*y`.
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/blas-base-cgemv
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
--   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var cgemv = require( '@stdlib/blas-base-cgemv' );
+import cgemv from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-cgemv@deno/mod.js';
 ```
 
 #### cgemv( order, trans, M, N, α, A, LDA, x, sx, β, y, sy )
@@ -70,8 +52,8 @@ Performs one of the matrix-vector operations `y = α*A*x + β*y` or `y = α*A^T*
 <!-- eslint-disable max-len -->
 
 ```javascript
-var Complex64Array = require( '@stdlib/array-complex64' );
-var Complex64 = require( '@stdlib/complex-float32-ctor' );
+import Complex64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-complex64@deno/mod.js';
+import Complex64 from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32-ctor@deno/mod.js';
 
 var A = new Complex64Array( [ 1.0, 1.0, 2.0, 2.0, 3.0, 3.0, 4.0, 4.0, 5.0, 5.0, 6.0, 6.0, 7.0, 7.0, 8.0, 8.0 ] );
 var x = new Complex64Array( [ 1.0, 1.0, 2.0, 2.0 ] );
@@ -104,8 +86,8 @@ The stride parameters determine how elements are accessed. For example, to itera
 <!-- eslint-disable max-len -->
 
 ```javascript
-var Complex64Array = require( '@stdlib/array-complex64' );
-var Complex64 = require( '@stdlib/complex-float32-ctor' );
+import Complex64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-complex64@deno/mod.js';
+import Complex64 from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32-ctor@deno/mod.js';
 
 var A = new Complex64Array( [ 1.0, 1.0, 2.0, 2.0, 3.0, 3.0, 4.0, 4.0, 5.0, 5.0, 6.0, 6.0, 7.0, 7.0, 8.0, 8.0 ] );
 var x = new Complex64Array( [ 1.0, 1.0, 0.0, 0.0, 2.0, 2.0, 0.0, 0.0 ] );
@@ -125,8 +107,8 @@ Note that indexing is relative to the first index. To introduce an offset, use [
 <!-- eslint-disable max-len -->
 
 ```javascript
-var Complex64Array = require( '@stdlib/array-complex64' );
-var Complex64 = require( '@stdlib/complex-float32-ctor' );
+import Complex64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-complex64@deno/mod.js';
+import Complex64 from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32-ctor@deno/mod.js';
 
 // Initial arrays...
 var x0 = new Complex64Array( [ 0.0, 0.0, 1.0, 1.0, 2.0, 2.0 ] );
@@ -153,8 +135,8 @@ Performs one of the matrix-vector operations `y = α*A*x + β*y` or `y = α*A^T*
 <!-- eslint-disable max-len -->
 
 ```javascript
-var Complex64Array = require( '@stdlib/array-complex64' );
-var Complex64 = require( '@stdlib/complex-float32-ctor' );
+import Complex64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-complex64@deno/mod.js';
+import Complex64 from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32-ctor@deno/mod.js';
 
 var A = new Complex64Array( [ 1.0, 1.0, 2.0, 2.0, 3.0, 3.0, 4.0, 4.0, 5.0, 5.0, 6.0, 6.0, 7.0, 7.0, 8.0, 8.0 ] );
 var x = new Complex64Array( [ 1.0, 1.0, 2.0, 2.0 ] );
@@ -180,8 +162,8 @@ While [`typed array`][mdn-typed-array] views mandate a view offset based on the 
 <!-- eslint-disable max-len -->
 
 ```javascript
-var Complex64Array = require( '@stdlib/array-complex64' );
-var Complex64 = require( '@stdlib/complex-float32-ctor' );
+import Complex64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-complex64@deno/mod.js';
+import Complex64 from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32-ctor@deno/mod.js';
 
 var A = new Complex64Array( [ 1.0, 1.0, 2.0, 2.0, 3.0, 3.0, 4.0, 4.0, 5.0, 5.0, 6.0, 6.0, 7.0, 7.0, 8.0, 8.0 ] );
 var x = new Complex64Array( [ 0.0, 0.0, 1.0, 1.0, 2.0, 2.0 ] );
@@ -217,11 +199,11 @@ cgemv.ndarray( 'no-transpose', 4, 2, alpha, A, 1, 4, 0, x, 1, 1, beta, y, -2, 6 
 <!-- eslint-disable max-len -->
 
 ```javascript
-var discreteUniform = require( '@stdlib/random-base-discrete-uniform' );
-var Complex64 = require( '@stdlib/complex-float32-ctor' );
-var filledarrayBy = require( '@stdlib/array-filled-by' );
-var logEach = require( '@stdlib/console-log-each' );
-var cgemv = require( '@stdlib/blas-base-cgemv' );
+import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-discrete-uniform@deno/mod.js';
+import Complex64 from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32-ctor@deno/mod.js';
+import filledarrayBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-filled-by@deno/mod.js';
+import logEach from 'https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each@deno/mod.js';
+import cgemv from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-cgemv@deno/mod.js';
 
 function rand() {
     return new Complex64( discreteUniform( 0, 255 ), discreteUniform( -128, 127 ) );
@@ -254,73 +236,7 @@ logEach( '%s', x );
 
 <!-- C interface documentation. -->
 
-* * *
 
-<section class="c">
-
-## C APIs
-
-<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
-
-<section class="intro">
-
-</section>
-
-<!-- /.intro -->
-
-<!-- C usage documentation. -->
-
-<section class="usage">
-
-### Usage
-
-```c
-TODO
-```
-
-#### TODO
-
-TODO.
-
-```c
-TODO
-```
-
-TODO
-
-```c
-TODO
-```
-
-</section>
-
-<!-- /.usage -->
-
-<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
-
-<section class="notes">
-
-</section>
-
-<!-- /.notes -->
-
-<!-- C API usage examples. -->
-
-<section class="examples">
-
-### Examples
-
-```c
-TODO
-```
-
-</section>
-
-<!-- /.examples -->
-
-</section>
-
-<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
@@ -339,7 +255,7 @@ TODO
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -408,7 +324,7 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 [mdn-typed-array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray
 
-[@stdlib/array/complex64]: https://github.com/stdlib-js/array-complex64
+[@stdlib/array/complex64]: https://github.com/stdlib-js/array-complex64/tree/deno
 
 </section>
 
