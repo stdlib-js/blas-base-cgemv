@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-05-18)
+## Unreleased (2026-05-19)
 
 <section class="features">
 
@@ -17,12 +17,23 @@
 
 <!-- /.features -->
 
+<section class="bug-fixes">
+
+### Bug Fixes
+
+-   [`c606f03`](https://github.com/stdlib-js/stdlib/commit/c606f03c3ef85ae8483d29198403f3cdd3b9da73) - correct bugs and typos in `blas/base/cgemv` [(#12192)](https://github.com/stdlib-js/stdlib/pull/12192)
+
+</section>
+
+<!-- /.bug-fixes -->
+
 <section class="commits">
 
 ### Commits
 
 <details>
 
+-   [`c606f03`](https://github.com/stdlib-js/stdlib/commit/c606f03c3ef85ae8483d29198403f3cdd3b9da73) - **fix:** correct bugs and typos in `blas/base/cgemv` [(#12192)](https://github.com/stdlib-js/stdlib/pull/12192) _(by Philipp Burckhardt)_
 -   [`2a0b1a1`](https://github.com/stdlib-js/stdlib/commit/2a0b1a14207a659f1deb4d0c2a4afb5a99ce40d5) - **feat:** add `C` implementation for `blas/base/cgemv` [(#11739)](https://github.com/stdlib-js/stdlib/pull/11739) _(by Divit Jain, Athan Reines)_
 -   [`11fe978`](https://github.com/stdlib-js/stdlib/commit/11fe9784619f60b1e31355e2ab06ad55ea90c312) - **chore:** minor clean-up [(#11694)](https://github.com/stdlib-js/stdlib/pull/11694) _(by Philipp Burckhardt, Athan Reines)_
 -   [`b3e5d1b`](https://github.com/stdlib-js/stdlib/commit/b3e5d1b5ccfd6f4d1b41761911b5dfddcec034fb) - **feat:** add `blas/base/cgemv` [(#10485)](https://github.com/stdlib-js/stdlib/pull/10485) _(by Divit Jain, Athan Reines)_
