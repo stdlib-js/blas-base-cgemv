@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-06-03)
+## Unreleased (2026-06-04)
 
 <section class="features">
 
@@ -33,6 +33,7 @@
 
 <details>
 
+-   [`ec68ca7`](https://github.com/stdlib-js/stdlib/commit/ec68ca7cc35210db29a028d561ec71968e2ff753) - **docs:** fix TSDoc errors in `blas` declarations [(#12529)](https://github.com/stdlib-js/stdlib/pull/12529) _(by Philipp Burckhardt, Athan Reines)_
 -   [`1bda9c9`](https://github.com/stdlib-js/stdlib/commit/1bda9c9faa736881973941e179545a3587ba71de) - **refactor:** replace `isMatrixTranspose` with `resolveStr` in `blas/base/cgemv` [(#12484)](https://github.com/stdlib-js/stdlib/pull/12484) _(by Divit Jain, Athan Reines)_
 -   [`f7a08b6`](https://github.com/stdlib-js/stdlib/commit/f7a08b6ce746cb67f028eabec46455e0642e3758) - **docs:** align `package.json` descriptions with imperative-mood convention [(#12431)](https://github.com/stdlib-js/stdlib/pull/12431) _(by Philipp Burckhardt)_
 -   [`f345dd6`](https://github.com/stdlib-js/stdlib/commit/f345dd6347b486da3185b27ab987035b4d3f4b52) - **docs:** fix incorrect logging in `blas/base/cgemv` example [(#12240)](https://github.com/stdlib-js/stdlib/pull/12240) _(by Divit Jain)_
