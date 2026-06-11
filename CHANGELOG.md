@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-06-04)
+## Unreleased (2026-06-11)
 
 <section class="features">
 
@@ -33,6 +33,7 @@
 
 <details>
 
+-   [`2c69cdd`](https://github.com/stdlib-js/stdlib/commit/2c69cdd44b2fbde5ee16ddbf87ec66e2167e621b) - **refactor:** replace `isMatrixTranspose` with `resolveTrans` in `*gemv` packages [(#12825)](https://github.com/stdlib-js/stdlib/pull/12825) _(by Kaustubh Patange)_
 -   [`ec68ca7`](https://github.com/stdlib-js/stdlib/commit/ec68ca7cc35210db29a028d561ec71968e2ff753) - **docs:** fix TSDoc errors in `blas` declarations [(#12529)](https://github.com/stdlib-js/stdlib/pull/12529) _(by Philipp Burckhardt, Athan Reines)_
 -   [`1bda9c9`](https://github.com/stdlib-js/stdlib/commit/1bda9c9faa736881973941e179545a3587ba71de) - **refactor:** replace `isMatrixTranspose` with `resolveStr` in `blas/base/cgemv` [(#12484)](https://github.com/stdlib-js/stdlib/pull/12484) _(by Divit Jain, Athan Reines)_
 -   [`f7a08b6`](https://github.com/stdlib-js/stdlib/commit/f7a08b6ce746cb67f028eabec46455e0642e3758) - **docs:** align `package.json` descriptions with imperative-mood convention [(#12431)](https://github.com/stdlib-js/stdlib/pull/12431) _(by Philipp Burckhardt)_
@@ -52,10 +53,11 @@
 
 ### Contributors
 
-A total of 3 people contributed to this release. Thank you to the following contributors:
+A total of 4 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
 -   Divit Jain
+-   Kaustubh Patange
 -   Philipp Burckhardt
 
 </section>
